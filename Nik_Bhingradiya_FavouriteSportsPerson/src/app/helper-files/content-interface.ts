@@ -3,8 +3,8 @@ interface Content{
   title: string;
   description: string;
   creator:string;
-  imgURL :string;
-  type:string;
-  tags:string;
+  imgURL ?:string;
+  type?:string;
+  tags?:string;
 
 }
