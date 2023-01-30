@@ -1,16 +1,26 @@
+import { Content } from "./content-interface";
+export class ContentList {
+  SportPersonListArry: Array<Content>;
 
-class ContentList {
-  static contentCount = 0;
-   private _items: Content[];
-  constructor(item: Content) {
-    this._items = [];
-    this._items[0] = item;
-    this.increaseCount();
+  constructor ()
+  {
+    this.SportPersonListArry=[];
   }
-  increaseCount() {
-    return ++ContentList.contentCount;
+
+  SportPersonConst(){
+    return this.SportPersonListArry;
   }
-  get item():Content[]{
-    return this._items;
+
+  AddSportPersonFunction(newname:Content){
+    this.SportPersonListArry.push(newname);
+  }
+
+  SportPersonListCount(){
+    return this.SportPersonListArry.length;
+  }
+
+  SportPersonInputFunction(id:number){
+    const name= this.SportPersonListArry[id];
+    return "<h1> SportPersonListDisplay </h1>" + name.title;
   }
 }
