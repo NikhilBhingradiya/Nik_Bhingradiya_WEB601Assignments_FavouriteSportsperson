@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 
@@ -9,12 +9,4 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ContentCardComponent {
 
-
-
-  ngOnInit() {
-
-
-
-
-  }
 }

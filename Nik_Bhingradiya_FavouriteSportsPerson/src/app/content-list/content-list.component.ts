@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Content } from '../helper-files/content-interface';
+
 
 @Component({
   selector: 'app-content-list',
@@ -8,7 +8,7 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentListComponent implements OnInit{
 
-  Contents=[
+  contents=[
     {
       id:1,
       title:'Sportperson-1',
@@ -68,8 +68,8 @@ export class ContentListComponent implements OnInit{
       gender:'male',
       imgURL:'https://angular.io/assets/images/logos/angular/angular.png'
 
-    }
-  ]
+    },
+  ];
   constructor() {
   }
   ngOnInit(){
