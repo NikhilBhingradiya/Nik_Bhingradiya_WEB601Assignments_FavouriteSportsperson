@@ -1,4 +1,7 @@
-<div *ngFor="let content of contents| slice:0:5">
-  <app-content-card></app-content-card>
-</div>
 
+<h1>My Favourite Sport person in this world</h1>
+<ul class="content-list">
+  <li *ngFor="let content of contentList">
+    <app-content-card [content] ="content"></app-content-card>
+  </li>
+</ul>
