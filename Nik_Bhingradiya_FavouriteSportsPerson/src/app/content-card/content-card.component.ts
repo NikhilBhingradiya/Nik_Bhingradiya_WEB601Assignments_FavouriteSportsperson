@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Content } from '../helper-files/content-interface';
+
 
 
 @Component({
@@ -12,6 +12,7 @@ export class ContentCardComponent {
 
 
   ngOnInit() {
+
 
 
 
