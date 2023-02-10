@@ -71,6 +71,16 @@ export class ContentListComponent{
       imgURL:'https://tse4.mm.bing.net/th?id=OIP.XA8mPULRKYGUjLkKOWoPcwHaFj&pid=Api&P=0'
 
     },
+    {
+      id:7,
+      title:'Sportperson-6',
+      description:'World best Betsmen',
+      name:'Sachine tendulkar',
+      role:'All-rounder',
+      gender:'male',
+      imgURL:'https://tse4.mm.bing.net/th?id=OIP.XA8mPULRKYGUjLkKOWoPcwHaFj&pid=Api&P=0'
+
+    },
   ];
   searchContent() {
     console.log(this.searchTerm);
