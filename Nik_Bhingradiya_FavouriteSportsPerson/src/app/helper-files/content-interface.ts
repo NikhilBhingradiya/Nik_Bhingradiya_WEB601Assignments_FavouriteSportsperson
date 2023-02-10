@@ -1,10 +1,13 @@
-interface Content{
+export interface Content{
   id: number;
-  title: string;
-  description: string;
-  creator:string;
+  title :string;
+  name: string;
   imgURL ?:string;
-  type?:string;
-  tags?:string;
+  description: string;
+  role:string;
+  gender: String;
+
+
+
 
 }
