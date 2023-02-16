@@ -1,7 +1,27 @@
+<div
+  ngClass="{{ content?.id }}"
+>
+  <div class="content-img">
+  <img
+  *ngIf="content?.imgURL"
+  src="{{ content?.imgURL }}"
+  alt="{{ content?.title }}"
+/>
+  <img
+    *ngIf="!content?.imgURL"
+    src="https://via.placeholder.com"
+    alt="{{ content?.title }}"
+  />
+  </div>
+  <div class="content-card">
 
-<img src="{{SportPersonListArry.SportPersonConst()[0].imgURL}}"><br>
-<span class="body">{{SportPersonListArry.SportPersonConst()[0].name}}</span><br>
+    <h2>{{ content?.title }}</h2>
+    <h2>{{ content?.name }}</h2>
+    <h2>{{ content?.gender }}</h2>
+    <h2>{{ content?.role }}</h2>
 
-<span class="type">{{SportPersonListArry.SportPersonConst()[0].description}}</span><br>
-
-
+    <p class="content-description">
+      {{ content?.description }}
+    </p>
+  </div>
+</div>
