@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ContentCardComponent } from './content-card/content-card.component';
 
 import { ContentlistComponent } from './contentlist/contentlist.component';
+import { CreateContentComponent } from './create-content/create-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentCardComponent,
 
-    ContentlistComponent
+    ContentlistComponent,
+      CreateContentComponent
 
 
   ],
