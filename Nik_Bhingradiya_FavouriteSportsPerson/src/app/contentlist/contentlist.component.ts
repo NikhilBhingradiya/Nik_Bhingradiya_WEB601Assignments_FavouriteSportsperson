@@ -103,5 +103,16 @@ export class ContentlistComponent {
         this.isAvailable = false;
       }
     });
+    
   }
+  onCreateContentAdded(newContent: Content) {
+    // Add new content item to the list
+    this.contentlist.push(newContent);
+
+    // Log success message to console
+    console.log(`Added ${newContent.title} successfully`);
+
+    console.log(this.contentlist);
+  }
+
 }
