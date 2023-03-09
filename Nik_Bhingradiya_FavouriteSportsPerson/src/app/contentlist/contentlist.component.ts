@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import  {Content} from "../helper-files/content-interface";
+import {SportpersonService} from "../sportperson.service";
 
 @Component({
   selector: 'app-contentlist',
@@ -15,13 +16,13 @@ export class ContentlistComponent {
 
   ];
 
-  constructor() {
-    this.isAvailable = false;
-    this.searchTerm = '';
-  }
 
   personInput(event: any) {
     this.searchTerm = event.target.value;
+  }
+  constructor(private SportpersonService: SportpersonService) {
+    this.isAvailable = false;
+    this.searchTerm = '';
   }
 
   searchContent() {

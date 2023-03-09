@@ -21,5 +21,8 @@
         </li>
       </ul>
     </li>-->
+    <li *ngFor="let Sportperson of Sportperson">
+      <app-content-card [Sportperson]="Sportperson"></app-content-card>
+    </li>
   </ul>
 </section>
