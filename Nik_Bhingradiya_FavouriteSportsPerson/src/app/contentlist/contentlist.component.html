@@ -14,12 +14,12 @@
   <p *ngIf="isAvailable">Available</p>
   <p *ngIf="!isAvailable">Not Available</p>
   <ul class="content-list">
-    <li *ngFor="let content of contentlist | contentlist">
+    <!-- <li *ngFor="let content of contentlist | contentlist">
       <ul>
         <li *ngFor="let c of content.content">
           <app-content-card [content]="c"></app-content-card>
         </li>
       </ul>
-    </li>
+    </li>-->
   </ul>
 </section>

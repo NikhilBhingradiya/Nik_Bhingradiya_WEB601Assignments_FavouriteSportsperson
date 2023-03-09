@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ContentCardComponent } from './content-card/content-card.component';
 
 import { ContentlistComponent } from './contentlist/contentlist.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentCardComponent,
 
-    ContentlistComponent
+    ContentlistComponent,
+      MessagesComponent
 
 
   ],
