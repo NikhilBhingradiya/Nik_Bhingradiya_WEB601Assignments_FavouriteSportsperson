@@ -37,4 +37,13 @@ export class ContentlistComponent {
       }
     });
   }
+
+  udateContent(updatedContent: Content) {
+    this.sportpersonService.updateMovie(updatedContent).subscribe((updatedSportperson) => {
+      const index = this.contentlist.findIndex(
+        (contentlist) => contentlist.id === updatedSportperson.id
+      );
+      this.contentlist[index] = updatedSportperson;
+    });
+  }
 }

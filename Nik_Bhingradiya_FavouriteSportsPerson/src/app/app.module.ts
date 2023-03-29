@@ -8,6 +8,7 @@ import { ContentCardComponent } from './content-card/content-card.component';
 
 import { ContentlistComponent } from './contentlist/contentlist.component';
 import { MessagesComponent } from './messages/messages.component';
+import { ModifyContentComponentComponent } from './modify-content-component/modify-content-component.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MessagesComponent } from './messages/messages.component';
     ContentCardComponent,
 
     ContentlistComponent,
-      MessagesComponent
+      MessagesComponent,
+      ModifyContentComponentComponent
 
 
   ],
