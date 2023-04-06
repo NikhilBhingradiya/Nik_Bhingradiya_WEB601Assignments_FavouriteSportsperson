@@ -37,13 +37,18 @@ export class ContentlistComponent {
       }
     });
   }
+  onContentAdded(newContent: Content) {
+    this.SportpersonService.addSportPerson(newContent).subscribe((sportperson) => {
+      this.sportperson.push(sportperson);
+    });
+  }
 
   udateContent(updatedContent: Content) {
-    this.sportpersonService.updateMovie(updatedContent).subscribe((updatedSportperson) => {
+    this.SportpersonService.updateSportPerson(updatedContent).subscribe((updatedSportPerson) => {
       const index = this.contentlist.findIndex(
-        (contentlist) => contentlist.id === updatedSportperson.id
+        (sportperson) => sportperson.id === updatedSportPerson.id
       );
-      this.contentlist[index] = updatedSportperson;
+      this.sportperson[index] = updatedSportPerson;
     });
   }
 }

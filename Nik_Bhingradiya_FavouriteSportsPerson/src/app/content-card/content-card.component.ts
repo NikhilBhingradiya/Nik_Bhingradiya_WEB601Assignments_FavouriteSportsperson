@@ -15,4 +15,9 @@ import { Content } from '../helper-files/content-interface';
   constructor() {
     console.log(this.content);
   }
+
+  onPress() {
+    console.log('button pressed');
+    console.log(this.content?.id, this.content?.title);
+  }
 }
