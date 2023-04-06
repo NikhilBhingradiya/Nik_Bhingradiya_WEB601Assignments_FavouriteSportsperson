@@ -9,6 +9,8 @@ import { ContentCardComponent } from './content-card/content-card.component';
 import { ContentlistComponent } from './contentlist/contentlist.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ModifyContentComponentComponent } from './modify-content-component/modify-content-component.component';
+import { AddContentDialogueComponent } from './add-content-dialogue/add-content-dialogue.component';
+import { CreateContentComponent } from './create-content/create-content.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ModifyContentComponentComponent } from './modify-content-component/modi
 
     ContentlistComponent,
       MessagesComponent,
-      ModifyContentComponentComponent
+      ModifyContentComponentComponent,
+      AddContentDialogueComponent,
+      CreateContentComponent
 
 
   ],

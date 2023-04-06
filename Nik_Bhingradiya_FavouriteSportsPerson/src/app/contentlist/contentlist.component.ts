@@ -50,5 +50,19 @@ export class ContentlistComponent {
       );
       this.sportperson[index] = updatedSportPerson;
     });
+
+    searchContent() {
+      console.log(this.searchTerm);
+      this.sportperson.forEach((sportperson) => {
+        if (sportperson.title.includes(this.searchTerm)) {
+          this.isAvailable = true;
+        } else if (this.searchTerm === '') {
+          this.isAvailable = false;
+        } else {
+          this.isAvailable = false;
+        }
+      
+      });
   }
+}
 }
