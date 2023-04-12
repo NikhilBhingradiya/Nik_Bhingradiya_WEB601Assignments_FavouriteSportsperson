@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Nik_Bhingradiya_FavouriteSportsPerson": {
+    "J_Patel_MyContent_SPA": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,20 +13,19 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nik-bhingradiya-favourite-sports-person",
+            "outputPath": "dist/j-patel-my-content-spa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -65,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Nik_Bhingradiya_FavouriteSportsPerson:build:production"
+              "browserTarget": "J_Patel_MyContent_SPA:build:production"
             },
             "development": {
-              "browserTarget": "Nik_Bhingradiya_FavouriteSportsPerson:build:development"
+              "browserTarget": "J_Patel_MyContent_SPA:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Nik_Bhingradiya_FavouriteSportsPerson:build"
+            "browserTarget": "J_Patel_MyContent_SPA:build"
           }
         },
         "test": {
@@ -87,13 +82,12 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -102,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "a3dadaa6-16aa-4bea-afe9-539fb83c9274"
   }
 }

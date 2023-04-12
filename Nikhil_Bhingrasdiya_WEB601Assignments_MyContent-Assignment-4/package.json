@@ -1,15 +1,15 @@
 {
-  "name": "nik-bhingradiya-favourite-sports-person",
+  "name": "j-patel-my-content-spa",
   "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "generatecomponent": "ng g c",
+    "generatepipe": "ng g pipe",
+    "generatedirective": "ng g directive",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "component" :"generate a component",
-    "pipe":"generate a pipe",
-    "directive": "generate a directive"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -26,8 +26,8 @@
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.1.1",
-    "@angular/cli": "~15.1.1",
+    "@angular-devkit/build-angular": "^15.1.2",
+    "@angular/cli": "~15.1.2",
     "@angular/compiler-cli": "^15.1.0",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",

@@ -1,6 +1,14 @@
-# NikBhingradiyaFavouriteSportsPerson
+# Project Created By
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+JAY PATEL
+
+# JPatelMyContentSPA
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+
+# Description for this SPA
+
+This project is for displaying different entertainment contents including different movies along with series.
 
 ## Development server
 
