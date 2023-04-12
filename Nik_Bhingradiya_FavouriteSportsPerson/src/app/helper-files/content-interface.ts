@@ -1,4 +1,5 @@
 export interface Content{
+  
   id: number;
   title :string;
   name: string;
@@ -6,8 +7,6 @@ export interface Content{
   description: string;
   role:string;
   gender: String;
-
-
-
+  type?: string;
 
 }

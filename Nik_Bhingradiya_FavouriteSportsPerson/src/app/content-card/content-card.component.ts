@@ -10,9 +10,20 @@ import { Content } from '../helper-files/content-interface';
 
 
   export class ContentCardComponent {
+
   @Input() content: Content | undefined;
 
   constructor() {
     console.log(this.content);
   }
+
+  logIdTitle(contentInfoToLog:Content):void{
+    console.log(`ID: ${contentInfoToLog.id}`)
+    console.log(`TITLE: ${contentInfoToLog.title}`)
+  }
+  onPress() {
+    console.log('button pressed');
+    console.log(this.content?.id, this.content?.title);
+  }
+  
 }
