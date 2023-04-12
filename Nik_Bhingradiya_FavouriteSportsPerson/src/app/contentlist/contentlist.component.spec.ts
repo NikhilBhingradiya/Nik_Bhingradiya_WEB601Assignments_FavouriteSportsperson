@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContentlistComponent } from './contentlist.component';
+import { ContentlistComponent } from './content-list.component';
 
 describe('ContentlistComponent', () => {
   let component: ContentlistComponent;
