@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Nik_Bhingradiya_FavouriteSportsPerson": {
+    "J_Patel_MyContent_SPA": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,22 +13,26 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nik-bhingradiya-favourite-sports-person",
+            "outputPath": "dist/j-patel-my-content-spa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "src/styles.css",
+              "src/my-theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Nik_Bhingradiya_FavouriteSportsPerson:build:production"
+              "browserTarget": "J_Patel_MyContent_SPA:build:production"
             },
             "development": {
-              "browserTarget": "Nik_Bhingradiya_FavouriteSportsPerson:build:development"
+              "browserTarget": "J_Patel_MyContent_SPA:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Nik_Bhingradiya_FavouriteSportsPerson:build"
+            "browserTarget": "J_Patel_MyContent_SPA:build"
           }
         },
         "test": {
@@ -87,13 +87,12 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -102,6 +101,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "5dcc5ac9-dde7-4020-80c9-74128c5c4de7"
   }
 }

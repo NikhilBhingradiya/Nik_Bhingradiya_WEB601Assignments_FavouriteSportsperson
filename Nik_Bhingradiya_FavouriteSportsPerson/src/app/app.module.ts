@@ -1,50 +1,61 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './services/in-memory-data.service';
-import { AppComponent } from './app.component';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { ContentCardComponent } from './content-card/content-card.component';
+import { ContentListComponent } from './content-list/content-list.component';
+import { ContentTypeFilterPipe } from './content-type-filter.pipe';
 import { HoverAffectDirective } from './hover-affect.directive';
-import { ContentlistComponent } from './contentlist/contentlist.component';
-import { MessagesComponent } from './messages/messages.component';
-import { AddContentDialogueComponent } from './add-content-dialogue/add-content-dialogue.component';
-import { CreateContentComponent } from './create-content/create-content.component';
-import { FormsModule } from '@angular/forms';
-import { sportpersonservice } from './sportpersonservice.service';
-import { MessagesComponent } from './messages/messages.component';
-import { ModifyContentComponentComponent } from './modify-content-component/modify-content-component.component';
+import { InMemoryDataService } from './services/in-memory-data.service';
+import { AppMessagesComponent } from './app-messages/app-messages.component';
+import { ModifyContentComponentComponent, ModifyContentComponentDialog } from './modify-content-component/modify-content-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-import { MatInputModule } from '@angular/material/input';
-import { AddContentDialogueComponent } from './add-content-dialogue/add-content-dialogue.component';
-import { MatDialogModule } from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AppRoutingModule } from './app-routing.module';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentCardComponent,
     ContentListComponent,
-    ContentFilterPipe,
+    ContentTypeFilterPipe,
     HoverAffectDirective,
-    CreateContentComponent,
-    MessagesComponent,
+    AppMessagesComponent,
     ModifyContentComponentComponent,
-    AddContentDialogComponent,
-  
+    ModifyContentComponentDialog,
+    PageNotFoundComponent
   ],
   imports: [
-    MatDialogModule,
-    MatButtonModule,
-    MatInputModule,
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
+    RouterModule,
+    AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
+      delay: 1000,
+    }),
+    MatButtonModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatCardModule,
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

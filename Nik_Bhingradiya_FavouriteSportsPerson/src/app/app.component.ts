@@ -3,9 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Nik_Bhingradiya_FavouriteSportsPerson';
-  name:string='Nik';
+  title = 'Nikhil_Bhingradiya';
 }
