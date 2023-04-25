@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "J_Patel_MyContent_SPA": {
+    "Nikhil-Bhingradiya_MyContent_SPA": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/j-patel-my-content-spa",
+            "outputPath": "dist/Nikhil-Bhingradiya-my-content-spa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "J_Patel_MyContent_SPA:build:production"
+              "browserTarget": "Nikhil-Bhingradiya_MyContent_SPA:build:production"
             },
             "development": {
-              "browserTarget": "J_Patel_MyContent_SPA:build:development"
+              "browserTarget": "Nikhil-Bhingradiya_MyContent_SPA:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "J_Patel_MyContent_SPA:build"
+            "browserTarget": "Nikhil-Bhingradiya_MyContent_SPA:build"
           }
         },
         "test": {
